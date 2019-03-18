@@ -1,1 +1,1 @@
-this is my first git project
+this is a text for git step two
