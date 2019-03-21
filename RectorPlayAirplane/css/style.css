@@ -1,0 +1,170 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color:#FFFFFF ;
+	min-width: 380px;
+}
+body{
+	background: #FFFFFF;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width:90%;
+	height: 1.65rem;
+	margin: 0px auto;
+	display: flex;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+.map{
+	width:90%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	background:url(../img/bg2.png) no-repeat;
+	background-size:100% 100% ;
+	overflow:hidden;
+}
+@media  screen and (min-width: 1024px){
+	header{
+		width: 55%;
+	}
+	.map{
+		width: 80%;
+	}
+}
+.time,.score,.num,.remake{
+	text-align: center;
+	font-size: 0.3rem;
+}	
+.time{
+	width:35%;
+	min-width: 2rem;
+	height: 1rem;
+	line-height: 1rem;
+}
+.button{
+	width: 15%;
+	min-width: 1.3rem;
+	height: 1rem;
+}
+.button img{
+	width: 1.5rem;
+	min-width: 1.3rem;
+	height: 1.1rem;
+}
+.remake{
+	width:15%;
+	height: 1.2rem;
+	background: url(../img/remake.jpg) no-repeat;
+	background-size: 100% 100%;
+	transition: all .4s;
+}
+.remake:hover{
+	transform: rotateZ(1440deg);
+}
+.score{
+	width: 33%;
+	height: 1rem;
+	min-width: 3rem;
+	margin: 0 auto;
+	border-radius: 15px;
+	padding-top: 10px;
+	background: #FFFFFF;
+	position: relative;
+	border: 2px solid #333;
+	box-shadow: 10px 10px 5px #888;
+}
+.score:before,.score:after{
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	left: 100%;
+	border: solid transparent;/*透明*/
+}
+.score:after{
+	border-width: 0.12rem;
+	border-left-color: #FFFFFF;
+	top: .2rem;
+}
+.score:before{
+	border-width:0.14rem ;
+	border-left-color:#000 ;
+	top:.18rem;
+}
+.confirm{
+	width: 1rem;
+	height: .34rem;
+	padding: 0;
+	line-height: .34rem;
+	border-radius: 4px;
+	background: #4aca6d;
+	border: 0;
+	outline: 0;
+	margin: 0 auto;
+	font-size: .14rem;
+	color: #fff;
+	cursor: pointer;
+	z-index: 5;
+	font-family: 'Microsoft YaHei';
+}
+.ready{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: .85;
+	z-index: 2;
+	background: #ccc;
+}
+.num{
+	width: 4rem;
+	height: 4.5rem;
+	background: #fff;
+	margin: 0 auto;
+	border-radius: 20px;
+	z-index: 3;
+	text-align: center;
+}
+.num span{
+	width: 100%;
+	height:.5rem;
+	margin-top: 0;
+	display: block;
+}
+.num img{
+	width: 4rem;
+	height:2.7rem;
+	margin-top: 10px;
+	z-index: 9999;
+	display: inline-block;
+}
+.wsc{
+	width:2rem;
+	height: 2rem;
+	background:url(../img/wsc.png) no-repeat ;
+	background-size: contain;
+	position: absolute;
+	top: .4rem;
+	left: .5rem;
+}
+.hotdog{
+	width:1.2rem ;
+	height: .8rem;
+	position: absolute;
+	left: 1.8rem;
+	top: .6rem;
+}
+.hotdog img{
+	height: .8rem;
+	width: 1.2rem;
+}
